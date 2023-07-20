@@ -99,6 +99,7 @@
                 v-if="isAnEmailInbox"
                 :cc-emails.sync="ccEmails"
                 :bcc-emails.sync="bccEmails"
+                :forward-to-emails.sync="forwardToEmails"
               />
               <label class="editor-wrap">
                 <woot-message-editor
@@ -192,6 +193,7 @@ export default {
       cannedResponseSearchKey: '',
       bccEmails: '',
       ccEmails: '',
+      forwardToEmails: '',
       targetInbox: {},
       whatsappTemplateSelected: false,
     };
@@ -229,6 +231,11 @@ export default {
       if (this.bccEmails) {
         payload.message.bcc_emails = this.bccEmails;
       }
+
+      if (this.forwardToEmails) {
+        payload.message.forwatd_to_emails = this.forwardToEmails;
+      }
+
       return payload;
     },
     selectedInbox: {
