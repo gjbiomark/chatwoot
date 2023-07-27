@@ -142,9 +142,9 @@ export default {
     ...mapGetters({ globalConfig: 'globalConfig/get' }),
     termsLink() {
       return this.$t('REGISTER.TERMS_ACCEPT')
-        .replace('https://www.chatwoot.com/terms', this.globalConfig.termsURL)
+        .replace('https://bm-dev-assets.biomarking.com/terms/site_terms.pdf', this.globalConfig.termsURL)
         .replace(
-          'https://www.chatwoot.com/privacy-policy',
+          'https://bm-dev-assets.biomarking.com/terms/site_policy.pdf',
           this.globalConfig.privacyURL
         );
     },

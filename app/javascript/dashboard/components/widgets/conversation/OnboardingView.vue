@@ -17,9 +17,9 @@
               })
             }}
           </p>
-          <p v-if="globalConfig.installationName === 'Chatwoot'">
+          <p v-if="globalConfig.installationName === 'Biomark'">
             <a
-              href="https://www.chatwoot.com/changelog"
+              href="https://www.biomarking.com/contact-us/"
               target="_blank"
               rel="noopener nofollow noreferrer"
               class="onboarding--link"
