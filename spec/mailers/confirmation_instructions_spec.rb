@@ -16,7 +16,7 @@ RSpec.describe 'Confirmation Instructions' do
     end
 
     it 'has the correct header data' do
-      expect(mail.reply_to).to contain_exactly('accounts@chatwoot.com')
+      expect(mail.reply_to).to contain_exactly('hello@bioamrking.com')
       expect(mail.to).to contain_exactly(confirmable_user.email)
       expect(mail.subject).to eq('Confirmation Instructions')
     end
@@ -53,7 +53,7 @@ RSpec.describe 'Confirmation Instructions' do
 
     context 'when user updates the email' do
       before do
-        confirmable_user.update!(email: 'user@example.com')
+        confirmable_user.update!(email: 'hello@biomarking.com')
       end
 
       it 'sends a confirmation link' do
@@ -68,7 +68,7 @@ RSpec.describe 'Confirmation Instructions' do
     context 'when user is confirmed and updates the email' do
       before do
         confirmable_user.confirm
-        confirmable_user.update!(email: 'user@example.com')
+        confirmable_user.update!(email: 'hello@biomarking.com')
       end
 
       it 'sends a confirmation link' do
