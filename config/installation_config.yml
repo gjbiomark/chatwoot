@@ -11,7 +11,7 @@
 - name: WIDGET_BRAND_URL
   value: 'https://customer-support.biomarking.com'
 - name: BRAND_NAME
-  value: 'Chatwoot'
+  value: 'Biomark'
 - name: TERMS_URL
   value: 'https://bm-dev-assets.biomarking.com/terms/site_terms.pdf'
 - name: PRIVACY_URL
