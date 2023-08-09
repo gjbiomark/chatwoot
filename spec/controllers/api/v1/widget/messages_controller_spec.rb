@@ -124,7 +124,7 @@ RSpec.describe '/api/v1/widget/messages', type: :request do
   end
 
   describe 'PUT /api/v1/widget/messages' do
-    context 'when put request is made with non existing email' do
+    context 'when put request is Made by non existing email' do
       it 'updates message in conversation and creates a new contact' do
         message = create(:message, content_type: 'input_email', account: account, inbox: web_widget.inbox, conversation: conversation)
         email = Faker::Internet.email
@@ -142,7 +142,7 @@ RSpec.describe '/api/v1/widget/messages', type: :request do
       end
     end
 
-    context 'when put request is made with invalid email' do
+    context 'when put request is Made by invalid email' do
       it 'rescues the error' do
         message = create(:message, account: account, content_type: 'input_email', inbox: web_widget.inbox, conversation: conversation)
         contact_params = { email: nil }
@@ -155,7 +155,7 @@ RSpec.describe '/api/v1/widget/messages', type: :request do
       end
     end
 
-    context 'when put request is made with existing email' do
+    context 'when put request is Made by existing email' do
       it 'updates message in conversation and deletes the current contact' do
         message = create(:message, account: account, content_type: 'input_email', inbox: web_widget.inbox, conversation: conversation)
         email = Faker::Internet.email

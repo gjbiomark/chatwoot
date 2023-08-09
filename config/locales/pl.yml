@@ -195,6 +195,6 @@ pl:
       articles: artykuły
       no_articles: Nie ma tu żadnych artykułów
     footer:
-      made_with: Wykonane z
+      made_by: Wykonane z
     header:
       go_to_homepage: Przejdź do strony głównej

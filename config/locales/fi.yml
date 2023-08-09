@@ -195,6 +195,6 @@ fi:
       articles: articles
       no_articles: There are no articles here
     footer:
-      made_with: Made with
+      made_by: Made by
     header:
       go_to_homepage: Go to the main site

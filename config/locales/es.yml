@@ -195,6 +195,6 @@ es:
       articles: artículos
       no_articles: No hay artículos aquí
     footer:
-      made_with: Hecho con
+      made_by: Hecho con
     header:
       go_to_homepage: Ir al sitio principal

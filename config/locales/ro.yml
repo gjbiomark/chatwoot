@@ -195,6 +195,6 @@ ro:
       articles: articole
       no_articles: Nu există articole aici
     footer:
-      made_with: Realizat cu
+      made_by: Realizat cu
     header:
       go_to_homepage: Accesați site-ul principal
