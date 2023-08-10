@@ -7,9 +7,9 @@
 - name: LOGO
   value: '/brand-assets/logo.svg'
 - name: BRAND_URL
-  value: 'https://tst-customer-support.biomarking.com'
+  value: 'https://customer-support.biomarking.com'
 - name: WIDGET_BRAND_URL
-  value: 'https://tst-customer-support.biomarking.com'
+  value: 'https://customer-support.biomarking.com'
 - name: BRAND_NAME
   value: 'Biomark'
 - name: TERMS_URL
